@@ -25,4 +25,7 @@
 </head>
 <body class="hold-transition skin-blue sidebar-mini">
 <div class="wrapper">
-  <?php include('menu.php'); ?>
+  <?php include('menu.php');
+  if(empty($_SESSION)){
+    header("Location:login.php");
+  }

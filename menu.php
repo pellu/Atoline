@@ -4,7 +4,7 @@
       <!-- mini logo for sidebar mini 50x50 pixels -->
       <span class="logo-mini"><b>A</b>LT</span>
       <!-- logo for regular state and mobile devices -->
-      <span class="logo-lg"><b>Admin</b>LTE</span>
+      <span class="logo-lg"><img src="img/logo.png" width="100px;"></span>
     </a>
     <!-- Header Navbar: style can be found in header.less -->
     <nav class="navbar navbar-static-top">
@@ -29,7 +29,7 @@
                   <li><!-- start message -->
                     <a href="#">
                       <div class="pull-left">
-                        <img src="dist/img/user2-160x160.jpg" class="img-circle" alt="User Image">
+                        <img src="img/moi.jpg" class="img-circle" alt="User Image">
                       </div>
                       <h4>
                         Support Team
@@ -211,17 +211,17 @@
           <!-- User Account: style can be found in dropdown.less -->
           <li class="dropdown user user-menu">
             <a href="#" class="dropdown-toggle" data-toggle="dropdown">
-              <img src="dist/img/user2-160x160.jpg" class="user-image" alt="User Image">
-              <span class="hidden-xs"><?=$_SESSION['profile']; ?></span>
+              <img src="img/moi.jpg" class="user-image" alt="User Image">
+              <span class="hidden-xs">Magalie</span>
             </a>
             <ul class="dropdown-menu">
               <!-- User image -->
               <li class="user-header">
-                <img src="dist/img/user2-160x160.jpg" class="img-circle" alt="User Image">
+                <img src="img/moi.jpg" class="img-circle" alt="User Image">
 
                 <p>
-                  <?=$_SESSION['profile']; ?>
-                  <small>Member since Nov. 2012</small>
+                  Magalie
+                  <small>Member since Mai 2017</small>
                 </p>
               </li>
               <!-- Menu Body -->
@@ -245,14 +245,10 @@
                   <a href="#" class="btn btn-default btn-flat">Profile</a>
                 </div>
                 <div class="pull-right">
-                  <a href="<?=$racinep;?>logout/" class="btn btn-default btn-flat">Sign out</a>
+                  <a href="" class="btn btn-default btn-flat">Sign out</a>
                 </div>
               </li>
             </ul>
-          </li>
-          <!-- Control Sidebar Toggle Button -->
-          <li>
-            <a href="#" data-toggle="control-sidebar"><i class="fa fa-gears"></i></a>
           </li>
         </ul>
       </div>
@@ -265,10 +261,10 @@
       <!-- Sidebar user panel -->
       <div class="user-panel">
         <div class="pull-left image">
-          <img src="dist/img/user2-160x160.jpg" class="img-circle" alt="User Image">
+          <img src="img/moi.jpg" class="img-circle" alt="User Image">
         </div>
         <div class="pull-left info">
-          <p><?=$_SESSION['profile']; ?></p>
+          <p>Magalie</p>
           <a href="#"><i class="fa fa-circle text-success"></i> Online</a>
         </div>
       </div>

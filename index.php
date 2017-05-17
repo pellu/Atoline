@@ -9,10 +9,6 @@ include('header.php');
         Dashboard
         <small>Control panel</small>
       </h1>
-      <ol class="breadcrumb">
-        <li><a href="#"><i class="fa fa-dashboard"></i> Home</a></li>
-        <li class="active">Dashboard</li>
-      </ol>
     </section>
 
     <section class="content">
@@ -160,7 +156,7 @@ include('header.php');
               <!-- /.item -->
               <!-- chat item -->
               <div class="item">
-                <img src="dist/img/user2-160x160.jpg" alt="user image" class="offline">
+                <img src="img/moi.jpg" alt="user image" class="offline">
 
                 <p class="message">
                   <a href="#" class="name">
