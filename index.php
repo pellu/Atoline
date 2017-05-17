@@ -249,14 +249,43 @@ include('header.php');
 									</div>
 									<!-- /. tools -->
 
-									<i class="fa fa-map-marker"></i>
+									<i class="fa fa-stethoscope"></i>
 
 									<h3 class="box-title">
-										Visitors
+										Tableau de bord
 									</h3>
 								</div>
 								<div class="box-body">
-									<div id="world-map" style="height: 250px; width: 100%;"></div>
+									<script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+                                     <div id="gauge_div" style="width:280px; height: 140px;"></div>
+                                      <input type="button" value="Go Faster" onclick="changeTemp(1)" />
+                                      <input type="button" value="Slow down" onclick="changeTemp(-1)" />
+                                                 <script>
+                                                         google.charts.load('current', {'packages':['gauge']});
+                                        google.charts.setOnLoadCallback(drawGauge);
+
+                                        var gaugeOptions = {min: 0, max: 300, yellowFrom: 0, yellowTo: 60,
+                                          redFrom: 250, redTo: 300, greenFrom: 70, greenTo: 150, minorTicks: 5};
+                                        var gauge;
+
+                                        function drawGauge() {
+                                          gaugeData = new google.visualization.DataTable();
+                                          gaugeData.addColumn('number', 'Glicémie');
+                                          gaugeData.addColumn('number', 'Tension');
+                                          gaugeData.addRows(2);
+                                          gaugeData.setCell(0, 0, 120);
+                                          gaugeData.setCell(0, 1, 80);
+
+                                          gauge = new google.visualization.Gauge(document.getElementById('gauge_div'));
+                                          gauge.draw(gaugeData, gaugeOptions);
+                                        }
+
+                                        function changeTemp(dir) {
+                                          gaugeData.setValue(0, 0, gaugeData.getValue(0, 0) + dir * 25);
+                                          gaugeData.setValue(0, 1, gaugeData.getValue(0, 1) + dir * 20);
+                                          gauge.draw(gaugeData, gaugeOptions);
+                                        }
+                                                    </script>
 								</div>
 								<!-- /.box-body-->
 								<div class="box-footer no-border">
