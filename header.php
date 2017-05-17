@@ -1,10 +1,3 @@
-<?php
-include('../inc/config.php');
-
-if($_SESSION['level'] != 1){
-    header("Location:".$racines."404/");
-}
-?>
 <!DOCTYPE html>
 <html>
 <head>
