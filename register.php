@@ -25,11 +25,8 @@
   </div>
 
   <div class="register-box-body">
-
     <p class="login-box-msg">Enregistrez-vous pour utiliser Atoline</p>
-
-
-    <form action="index.php" method="post">
+    <form action="demo.php" method="post">
       <div class="form-group has-feedback">
         <input type="text" class="form-control" name="prenom" placeholder="Prénom">
         <span class="glyphicon glyphicon-user form-control-feedback"></span>
@@ -50,15 +47,12 @@
       <div class="form-group has-feedback">
         <input type="text" class="form-control" name="id" placeholder="Numéro d'identification">
         <span class="fa fa-key form-control-feedback"></span>
-
-     
       </div>
       <div class="row">
         <div class="col-xs-8">
           <div class="checkbox icheck">
             <label>
-              <input type="checkbox"> J'accepte les <a href="#">termes</a>
-                
+              <input type="checkbox"> J'accepte les <a href="#">termes</a> 
             </label>
           </div>
         </div>

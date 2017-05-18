@@ -1,8 +1,3 @@
-<?php
-if($_GET){
-  
-}
-?>
 <!DOCTYPE html>
 <html>
 <head>
@@ -25,49 +20,43 @@ if($_GET){
   <![endif]-->
 </head>
 <body class="hold-transition login-page">
-<div class="login-box">
-  <div class="login-logo">
-    <a href="index2.php">
-<img src="img/logo.png" width="150px"></a>
-  </div>
-  <div class="login-box-body">
-    <p class="login-box-msg">Connectez-vous pour utiliser Atoline</p>
-
-
-    <form action="http://localhost/atoline/" method="get">
-      <div class="form-group has-feedback">
-        <input type="text" name="email" class="form-control" placeholder="Email">
-        <span class="glyphicon glyphicon-user form-control-feedback"></span>
+  <div class="login-box">
+    <div class="login-logo">
+      <a href="index.php">
+        <img src="img/logo.png" width="150px"></a>
       </div>
-      <div class="form-group has-feedback">
-        <input type="password" name="password" class="form-control" placeholder="Mot de passe">
-        <span class="glyphicon glyphicon-lock form-control-feedback"></span>
+      <div class="login-box-body">
+        <p class="login-box-msg">Connectez-vous pour utiliser Atoline</p>
+        <form action="demo.php" method="post">
+          <div class="form-group has-feedback">
+            <input type="text" name="email" class="form-control" placeholder="Email">
+            <span class="glyphicon glyphicon-user form-control-feedback"></span>
+          </div>
+          <div class="form-group has-feedback">
+            <input type="password" name="password" class="form-control" placeholder="Mot de passe">
+            <span class="glyphicon glyphicon-lock form-control-feedback"></span>
+          </div>
+          <div class="row">
+            <div class="col-xs-12">
+              <input type="submit" value="Sign In" class="btn btn-primary btn-block btn-flat">
+            </div>
+          </div>
+        </form>
+        <a href="register.php" class="text-center">S'inscrire</a>
       </div>
-      <div class="row">
-      
+    </div>
 
-        <div class="col-xs-12">
-          <input type="submit" value="Sign In" class="btn btn-primary btn-block btn-flat">
-
-       
-        </div>
-      </div>
-    </form>
-    <a href="register.php" class="text-center">S'inscrire</a>
-  </div>
-</div>
-
-<script src="plugins/jQuery/jquery-2.2.3.min.js"></script>
-<script src="bootstrap/js/bootstrap.min.js"></script>
-<script src="plugins/iCheck/icheck.min.js"></script>
-<script>
-  $(function () {
-    $('input').iCheck({
-      checkboxClass: 'icheckbox_square-blue',
-      radioClass: 'iradio_square-blue',
+    <script src="plugins/jQuery/jquery-2.2.3.min.js"></script>
+    <script src="bootstrap/js/bootstrap.min.js"></script>
+    <script src="plugins/iCheck/icheck.min.js"></script>
+    <script>
+      $(function () {
+        $('input').iCheck({
+          checkboxClass: 'icheckbox_square-blue',
+          radioClass: 'iradio_square-blue',
       increaseArea: '20%' // optional
     });
-  });
-</script>
-</body>
-</html>
+      });
+    </script>
+  </body>
+  </html>
