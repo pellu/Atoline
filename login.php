@@ -1,6 +1,6 @@
 <?php
 if($_GET){
-  print_r($_GET);
+  
 }
 ?>
 <!DOCTYPE html>
@@ -31,11 +31,11 @@ if($_GET){
 <img src="img/logo.png" width="150px"></a>
   </div>
   <div class="login-box-body">
-    <p class="login-box-msg">Sign in to start your session</p>
+    <p class="login-box-msg">Connectez-vous pour utiliser Atoline</p>
 
     <form action="http://localhost/atoline/" method="get">
       <div class="form-group has-feedback">
-        <input type="text" name="pseudo" class="form-control" placeholder="Pseudo">
+        <input type="text" name="email" class="form-control" placeholder="Email">
         <span class="glyphicon glyphicon-user form-control-feedback"></span>
       </div>
       <div class="form-group has-feedback">
@@ -43,14 +43,8 @@ if($_GET){
         <span class="glyphicon glyphicon-lock form-control-feedback"></span>
       </div>
       <div class="row">
-        <div class="col-xs-8">
-          <div class="checkbox icheck">
-            <label>
-              <input type="checkbox"> Remember Me
-            </label>
-          </div>
-        </div>
-        <div class="col-xs-4">
+
+        <div class="col-xs-12">
           <input type="submit" value="Sign In" class="btn btn-primary btn-block btn-flat">
         </div>
       </div>
