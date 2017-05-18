@@ -33,7 +33,7 @@ if($_GET){
   <div class="login-box-body">
     <p class="login-box-msg">Sign in to start your session</p>
 
-    <form action="" method="get">
+    <form action="http://localhost/atoline/" method="get">
       <div class="form-group has-feedback">
         <input type="text" name="pseudo" class="form-control" placeholder="Pseudo">
         <span class="glyphicon glyphicon-user form-control-feedback"></span>
