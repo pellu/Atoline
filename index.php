@@ -15,6 +15,7 @@ include('header.php');
 </section>
 
 
+
 <!-- Button HTML (to Trigger Modal) -->
 
 
@@ -131,6 +132,33 @@ include('header.php');
 
 
 <section class="content">
+<!-- Make it flow -->
+                    <div class="box box-primary">
+                    <div class="box-header with-border">
+                      <i class="fa fa-bar-chart-o"></i>
+
+                      <h3 class="box-title">Taux Glycémie</h3>
+
+                      
+                    </div>
+                    <div class="box-body">
+                      <div id="interactive2" style="height: 300px;"></div>
+                    </div>
+                  </div> 
+                  
+                  <!-- Make it flow -->
+                  <div class="box box-primary">
+                    <div class="box-header with-border">
+                      <i class="fa fa-heartbeat"></i>
+
+                      <h3 class="box-title">Pulsation coeur</h3>
+
+                    </div>
+                    <div class="box-body">
+                      <div id="interactive" style="height: 300px;"></div>
+                    </div>
+                  </div>
+                  
 	<!-- Main row -->
 	<div class="row">
 		<!-- Left col -->
@@ -232,25 +260,7 @@ include('header.php');
 					</div>
 				</div>
 				
-                  <!-- Make it flow -->
-                  <div class="box box-primary">
-                    <div class="box-header with-border">
-                      <i class="fa fa-bar-chart-o"></i>
-
-                      <h3 class="box-title">Interactive Area Chart</h3>
-
-                      <div class="box-tools pull-right">
-                        Real time
-                        <div class="btn-group" id="realtime" data-toggle="btn-toggle">
-                          <button type="button" class="btn btn-default btn-xs active" data-toggle="on">On</button>
-                          <button type="button" class="btn btn-default btn-xs" data-toggle="off">Off</button>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="box-body">
-                      <div id="interactive" style="height: 300px;"></div>
-                    </div>
-                  </div>
+                  
 
 
                 <!-- jQuery 2.2.3 -->
@@ -275,8 +285,38 @@ include('header.php');
                      */
                     // We use an inline data source in the example, usually data would
                     // be fetched from a server
-                    var data = [], totalPoints = 100;
+                    
+                    var glycemie = [], totalGlycemie = 300;
+                    
+                    function getRandomGylcemie(){
+                        if (glycemie.length > 0)
+                        glycemie = glycemie.slice(1);
+                        
+                        // Do a random walk
+                          while (glycemie.length < totalGlycemie) {
 
+                            var prev = glycemie.length > 0 ? glycemie[glycemie.length - 1] : 180,
+                                y = prev + Math.random() * 10 - 5;
+
+                            if (y < 0) {
+                              y = 0;
+                            } else if (y > 180) {
+                              y = 180;
+                            }
+
+                            glycemie.push(y);
+                          }
+                            // Zip the generated y values with the x values
+                          var res = [];
+                          for (var i = 0; i < glycemie.length; ++i) {
+                            res.push([i, glycemie[i]]);
+                          }
+
+                          return res;                
+                    }
+                      
+                      
+                      var data = [], totalPoints = 100;   
                     function getRandomData() {
 
                       if (data.length > 0)
@@ -285,7 +325,7 @@ include('header.php');
                       // Do a random walk
                       while (data.length < totalPoints) {
 
-                        var prev = data.length > 0 ? data[data.length - 1] : 50,
+                        var prev = data.length > 0 ? data[data.length - 1] : 100,
                             y = prev + Math.random() * 10 - 5;
 
                         if (y < 0) {
@@ -314,6 +354,30 @@ include('header.php');
                       },
                       series: {
                         shadowSize: 0, // Drawing is faster without shadows
+                        color: "#d4000"
+                      },
+                      lines: {
+                        fill: true, //Converts the line chart to area chart
+                        color: "#d4000"
+                      },
+                      yaxis: {
+                        min: 0,
+                        max: 150,
+                        show: true
+                      },
+                      xaxis: {
+                        show: true
+                      }
+                    });
+                      
+                    var interactive2_plot = $.plot("#interactive2", [getRandomGylcemie()], {
+                      grid: {
+                        borderColor: "#f3f3f3",
+                        borderWidth: 1,
+                        tickColor: "#f3f3f3"
+                      },
+                      series: {
+                        shadowSize: 0, // Drawing is faster without shadows
                         color: "#3c8dbc"
                       },
                       lines: {
@@ -322,7 +386,7 @@ include('header.php');
                       },
                       yaxis: {
                         min: 0,
-                        max: 100,
+                        max: 300,
                         show: true
                       },
                       xaxis: {
@@ -330,14 +394,17 @@ include('header.php');
                       }
                     });
 
-                    var updateInterval = 500; //Fetch data ever x milliseconds
+                    var updateInterval = 1000; //Fetch data ever x milliseconds
                     var realtime = "on"; //If == to on then fetch data every x seconds. else stop fetching
                     function update() {
 
-                      interactive_plot.setData([getRandomData()]);
+                    interactive_plot.setData([getRandomData()]);
+                    interactive2_plot.setData([getRandomGylcemie()]);
 
                       // Since the axes don't change, we don't need to call plot.setupGrid()
-                      interactive_plot.draw();
+                    interactive_plot.draw();
+                    interactive2_plot.draw();
+                        
                       if (realtime === "on")
                         setTimeout(update, updateInterval);
                     }
@@ -374,7 +441,7 @@ include('header.php');
                     }
                     var line_data1 = {
                       data: sin,
-                      color: "#3c8dbc"
+                      color: "#d4000"
                     };
                     var line_data2 = {
                       data: cos,
@@ -538,80 +605,7 @@ include('header.php');
 				<!-- right col (We are only adding the ID to make the widgets sortable)-->
 				<section class="col-lg-5 connectedSortable">
 
-					<!-- Map box -->
-					<div class="box box-solid bg-light-blue-gradient">
-						<div class="box-header">
-							<!-- tools box -->
-							<div class="pull-right box-tools">
-								<button type="button" class="btn btn-primary btn-sm daterange pull-right" data-toggle="tooltip" title="Date range">
-									<i class="fa fa-calendar"></i></button>
-									<button type="button" class="btn btn-primary btn-sm pull-right" data-widget="collapse" data-toggle="tooltip" title="Collapse" style="margin-right: 5px;">
-										<i class="fa fa-minus"></i></button>
-									</div>
-									<!-- /. tools -->
-
-									<i class="fa fa-stethoscope"></i>
-
-									<h3 class="box-title">
-										Tableau de bord
-									</h3>
-								</div>
-								<div class="box-body">
-									<script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
-                                     <div id="gauge_div" style="width:280px; height: 140px;"></div>
-                                      <input type="button" value="Go Faster" onclick="changeTemp(1)" />
-                                      <input type="button" value="Slow down" onclick="changeTemp(-1)" />
-                                                 <script>
-                                                         google.charts.load('current', {'packages':['gauge']});
-                                        google.charts.setOnLoadCallback(drawGauge);
-
-                                        var gaugeOptions = {min: 0, max: 300, yellowFrom: 0, yellowTo: 60,
-                                          redFrom: 250, redTo: 300, greenFrom: 70, greenTo: 150, minorTicks: 5};
-                                        var gauge;
-
-                                        function drawGauge() {
-                                          gaugeData = new google.visualization.DataTable();
-                                          gaugeData.addColumn('number', 'Glicémie');
-                                          gaugeData.addColumn('number', 'Tension');
-                                          gaugeData.addRows(2);
-                                          gaugeData.setCell(0, 0, 120);
-                                          gaugeData.setCell(0, 1, 80);
-
-                                          gauge = new google.visualization.Gauge(document.getElementById('gauge_div'));
-                                          gauge.draw(gaugeData, gaugeOptions);
-                                        }
-
-                                        function changeTemp(dir) {
-                                          gaugeData.setValue(0, 0, gaugeData.getValue(0, 0) + dir * 25);
-                                          gaugeData.setValue(0, 1, gaugeData.getValue(0, 1) + dir * 20);
-                                          gauge.draw(gaugeData, gaugeOptions);
-                                        }
-                                                    </script>
-								</div>
-								<!-- /.box-body-->
-								<div class="box-footer no-border">
-									<div class="row">
-										<div class="col-xs-4 text-center" style="border-right: 1px solid #f4f4f4">
-											<div id="sparkline-1"></div>
-											<div class="knob-label">Visitors</div>
-										</div>
-										<!-- ./col -->
-										<div class="col-xs-4 text-center" style="border-right: 1px solid #f4f4f4">
-											<div id="sparkline-2"></div>
-											<div class="knob-label">Online</div>
-										</div>
-										<!-- ./col -->
-										<div class="col-xs-4 text-center">
-											<div id="sparkline-3"></div>
-											<div class="knob-label">Exists</div>
-										</div>
-										<!-- ./col -->
-									</div>
-									<!-- /.row -->
-								</div>
-							</div>
-							<!-- /.box -->
-
+					
 							<!-- solid sales graph -->
 							<div class="box box-solid bg-teal-gradient">
 								<div class="box-header">
