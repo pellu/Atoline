@@ -38,7 +38,7 @@
           </div>
           <div class="row">
             <div class="col-xs-12">
-              <input type="submit" value="Sign In" class="btn btn-primary btn-block btn-flat">
+              <input type="submit" value="Connexion" class="btn btn-primary btn-block btn-flat">
             </div>
           </div>
         </form>

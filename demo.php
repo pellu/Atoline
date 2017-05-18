@@ -206,33 +206,34 @@ span.round-tab:hover {
             <form role="form">
                 <div class="tab-content">
                     <div class="tab-pane active" role="tabpanel" id="step1">
-                        <h3>Step 1</h3>
-                        <p>This is step 1</p>
+                        <p style="margin-left: 20px;">Bonjour Clothilde,<br>Suivez nos instructions pour votre première installation</p>
                         <ul class="list-inline pull-right">
-                            <li><button type="button" class="btn btn-primary next-step">Save and continue</button></li>
+                            <li><button type="button" class="btn btn-primary next-step">Etape 1</button></li>
                         </ul>
                     </div>
                     <div class="tab-pane" role="tabpanel" id="step2">
-                        <h3>Step 2</h3>
-                        <p>This is step 2</p>
+                        <h3 style="margin-left: 20px;">Etape 1</h3>
+                        <p style="margin-left: 20px;">Vissez la partie électronique avec le réservoir et la batterie.<br>Branchez le fil au capteur et à Atoline</p>
                         <ul class="list-inline pull-right">
-                            <li><button type="button" class="btn btn-default prev-step">Previous</button></li>
-                            <li><button type="button" class="btn btn-primary next-step">Save and continue</button></li>
+                            <li><button type="button" class="btn btn-default prev-step">Retour</button></li>
+                            <li><button type="button" class="btn btn-primary next-step">Etape 2</button></li>
                         </ul>
                     </div>
                     <div class="tab-pane" role="tabpanel" id="step3">
-                        <h3>Step 3</h3>
-                        <p>This is step 3</p>
+                        <h3 style="margin-left: 20px;">Etape 2</h3>
+                        <p style="margin-left: 20px;">Désinfectez la zone sur laquelle vous allez poser le cathéter.<br>Retirez le film plastique du capteur et installez-le.</p>
                         <ul class="list-inline pull-right">
-                            <li><button type="button" class="btn btn-default prev-step">Previous</button></li>
-                            <li><button type="button" class="btn btn-default next-step">Skip</button></li>
-                            <li><button type="button" class="btn btn-primary btn-info-full next-step">Save and continue</button></li>
+                            <li><button type="button" class="btn btn-default prev-step">Retour</button></li>
+                            <li><button type="button" class="btn btn-primary btn-info-full next-step">Etape 3</button></li>
                         </ul>
                     </div>
                     <div class="tab-pane" role="tabpanel" id="complete">
-                        <h3>Complete</h3>
-                        <p>You have successfully completed all steps.</p>
-                        <a href="index.php">Utiliser l'application</a>
+                        <h3 style="margin-left: 20px;">Etape 3</h3>
+                        <p style="margin-left: 20px;">Vérifions ensemble le cathéter capteur.</p>
+                        <ul class="list-inline pull-right">
+                            <li><button type="button" class="btn btn-default prev-step">Retour</button></li>
+                            <li><button type="button" class="btn btn-primary next-step"><a href="index.php" style="color: white">Utiliser l'application</a></button></li>
+                        </ul>
                     </div>
                     <div class="clearfix"></div>
                 </div>

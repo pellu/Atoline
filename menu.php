@@ -7,7 +7,7 @@
       <!-- mini logo for sidebar mini 50x50 pixels -->
       <span class="logo-mini"><b>A</b>LT</span>
       <!-- logo for regular state and mobile devices -->
-      <span class="logo-lg"><img src="img/logo.png" width="100px;"></span>
+      <span class="logo-lg"><img src="img/logo_w.png" width="100px;"></span>
     </a>
       <div class="navbar-custom-menu">
         <ul class="nav navbar-nav">
