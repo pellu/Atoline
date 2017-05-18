@@ -31,11 +31,8 @@ if($_GET){
 <img src="img/logo.png" width="150px"></a>
   </div>
   <div class="login-box-body">
-<<<<<<< Updated upstream
     <p class="login-box-msg">Connectez-vous pour utiliser Atoline</p>
-=======
-    <p class="login-box-msg">Connectez-vous pour commencer la navigation</p>
->>>>>>> Stashed changes
+
 
     <form action="http://localhost/atoline/" method="get">
       <div class="form-group has-feedback">
@@ -47,21 +44,12 @@ if($_GET){
         <span class="glyphicon glyphicon-lock form-control-feedback"></span>
       </div>
       <div class="row">
-<<<<<<< Updated upstream
+      
 
         <div class="col-xs-12">
           <input type="submit" value="Sign In" class="btn btn-primary btn-block btn-flat">
-=======
-        <div class="col-xs-8">
-          <div class="checkbox icheck">
-            <label>
-              <input type="checkbox"> Se souvenir de moi
-            </label>
-          </div>
-        </div>
-        <div class="col-xs-4">
-          <input type="submit" value="Connexion" class="btn btn-primary btn-block btn-flat">
->>>>>>> Stashed changes
+
+       
         </div>
       </div>
     </form>

@@ -25,11 +25,9 @@
   </div>
 
   <div class="register-box-body">
-<<<<<<< Updated upstream
+
     <p class="login-box-msg">Enregistrez-vous pour utiliser Atoline</p>
-=======
-    <p class="login-box-msg">Inscription</p>
->>>>>>> Stashed changes
+
 
     <form action="index.php" method="post">
       <div class="form-group has-feedback">
@@ -45,21 +43,15 @@
         <span class="glyphicon glyphicon-envelope form-control-feedback"></span>
       </div>
       <div class="form-group has-feedback">
-<<<<<<< Updated upstream
+      
         <input type="password" class="form-control" name="password" placeholder="Password">
         <span class="glyphicon glyphicon-lock form-control-feedback"></span>
       </div>
       <div class="form-group has-feedback">
         <input type="text" class="form-control" name="id" placeholder="Numéro d'identification">
         <span class="fa fa-key form-control-feedback"></span>
-=======
-        <input type="password" class="form-control" placeholder="Mot de passe">
-        <span class="glyphicon glyphicon-lock form-control-feedback"></span>
-      </div>
-      <div class="form-group has-feedback">
-        <input type="password" class="form-control" placeholder="Verification">
-        <span class="glyphicon glyphicon-log-in form-control-feedback"></span>
->>>>>>> Stashed changes
+
+     
       </div>
       <div class="row">
         <div class="col-xs-8">
