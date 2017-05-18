@@ -8,7 +8,7 @@ if($_GET){
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <title>Atoline | Log in</title>
+  <title>Atoline | Connexion</title>
   <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
   <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
 
@@ -31,7 +31,11 @@ if($_GET){
 <img src="img/logo.png" width="150px"></a>
   </div>
   <div class="login-box-body">
+<<<<<<< Updated upstream
     <p class="login-box-msg">Connectez-vous pour utiliser Atoline</p>
+=======
+    <p class="login-box-msg">Connectez-vous pour commencer la navigation</p>
+>>>>>>> Stashed changes
 
     <form action="http://localhost/atoline/" method="get">
       <div class="form-group has-feedback">
@@ -39,17 +43,29 @@ if($_GET){
         <span class="glyphicon glyphicon-user form-control-feedback"></span>
       </div>
       <div class="form-group has-feedback">
-        <input type="password" name="password" class="form-control" placeholder="Password">
+        <input type="password" name="password" class="form-control" placeholder="Mot de passe">
         <span class="glyphicon glyphicon-lock form-control-feedback"></span>
       </div>
       <div class="row">
+<<<<<<< Updated upstream
 
         <div class="col-xs-12">
           <input type="submit" value="Sign In" class="btn btn-primary btn-block btn-flat">
+=======
+        <div class="col-xs-8">
+          <div class="checkbox icheck">
+            <label>
+              <input type="checkbox"> Se souvenir de moi
+            </label>
+          </div>
+        </div>
+        <div class="col-xs-4">
+          <input type="submit" value="Connexion" class="btn btn-primary btn-block btn-flat">
+>>>>>>> Stashed changes
         </div>
       </div>
     </form>
-    <a href="register.php" class="text-center">Register a new membership</a>
+    <a href="register.php" class="text-center">S'inscrire</a>
   </div>
 </div>
 

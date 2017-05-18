@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <title>Atoline | Registration Page</title>
+  <title>Atoline | Inscription</title>
   <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
   <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.5.0/css/font-awesome.min.css">
@@ -25,7 +25,11 @@
   </div>
 
   <div class="register-box-body">
+<<<<<<< Updated upstream
     <p class="login-box-msg">Enregistrez-vous pour utiliser Atoline</p>
+=======
+    <p class="login-box-msg">Inscription</p>
+>>>>>>> Stashed changes
 
     <form action="index.php" method="post">
       <div class="form-group has-feedback">
@@ -41,28 +45,38 @@
         <span class="glyphicon glyphicon-envelope form-control-feedback"></span>
       </div>
       <div class="form-group has-feedback">
+<<<<<<< Updated upstream
         <input type="password" class="form-control" name="password" placeholder="Password">
         <span class="glyphicon glyphicon-lock form-control-feedback"></span>
       </div>
       <div class="form-group has-feedback">
         <input type="text" class="form-control" name="id" placeholder="Numéro d'identification">
         <span class="fa fa-key form-control-feedback"></span>
+=======
+        <input type="password" class="form-control" placeholder="Mot de passe">
+        <span class="glyphicon glyphicon-lock form-control-feedback"></span>
+      </div>
+      <div class="form-group has-feedback">
+        <input type="password" class="form-control" placeholder="Verification">
+        <span class="glyphicon glyphicon-log-in form-control-feedback"></span>
+>>>>>>> Stashed changes
       </div>
       <div class="row">
         <div class="col-xs-8">
           <div class="checkbox icheck">
             <label>
-              <input type="checkbox"> I agree to the <a href="#">terms</a>
+              <input type="checkbox"> J'accepte les <a href="#">termes</a>
+                
             </label>
           </div>
         </div>
         <div class="col-xs-4">
-          <button type="submit" class="btn btn-primary btn-block btn-flat">Register</button>
+          <button type="submit" class="btn btn-primary btn-block btn-flat">Inscription</button>
         </div>
       </div>
     </form>
 
-    <a href="login.php" class="text-center">I already have a membership</a>
+    <a href="login.php" class="text-center">Je possède déja un compte</a>
   </div>
 </div>
 
