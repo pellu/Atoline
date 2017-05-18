@@ -238,5 +238,17 @@
 <script src="dist/js/pages/dashboard.js"></script>
 <!-- AdminLTE for demo purposes -->
 <script src="dist/js/demo.js"></script>
+
+
+
+
+<!-- FLOT CHARTS -->
+<script src="plugins/flot/jquery.flot.min.js"></script>
+<!-- FLOT RESIZE PLUGIN - allows the chart to redraw when the window is resized -->
+<script src="plugins/flot/jquery.flot.resize.min.js"></script>
+<!-- FLOT PIE PLUGIN - also used to draw donut charts -->
+<script src="plugins/flot/jquery.flot.pie.min.js"></script>
+<!-- FLOT CATEGORIES PLUGIN - Used to draw bar charts -->
+<script src="plugins/flot/jquery.flot.categories.min.js"></script>
 </body>
 </html>
