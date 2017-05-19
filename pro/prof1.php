@@ -1,13 +1,9 @@
-<?php
-session_start();
-
-?>
- <!DOCTYPE html>
+<!DOCTYPE html>
 <html>
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <title>Atoline</title>
+  <title>Atoline pro</title>
   <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
   <link rel="icon" type="../image/png" href="img/favicon-196x196.png" sizes="196x196" />
   <link rel="icon" type="../image/png" href="img/favicon-160x160.png" sizes="160x160" />
@@ -45,11 +41,11 @@ session_start();
     <!-- Header Navbar: style can be found in header.less -->
     <nav class="navbar navbar-static-top">
       <!-- Sidebar toggle button-->
-<a href="http://localhost/atoline/" class="logo">
+<a href="index.php" class="logo">
       <!-- mini logo for sidebar mini 50x50 pixels -->
       <span class="logo-mini"><b>A</b>LT</span>
       <!-- logo for regular state and mobile devices -->
-      <span class="logo-lg"><img src="../img/logo_w.png" width="100px;"></span>
+      <span class="logo-lg"><img src="../img/logo_pro.png" width="100px;"></span>
     </a>
       <div class="navbar-custom-menu">
         <ul class="nav navbar-nav">
@@ -194,7 +190,7 @@ session_start();
     <!-- Content Header (Page header) -->
     <section class="content-header">
       <h1>
-        <a href="http://localhost:8888/atoline/Pro/#activity">Gestion des Patients</a>
+        <a href="index.php">Gestion des Patients</a>
       </h1>
       
     </section>

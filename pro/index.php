@@ -4,7 +4,7 @@
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <title>Atoline</title>
+  <title>Atoline pro</title>
   <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
   <link rel="icon" type="../image/png" href="img/favicon-196x196.png" sizes="196x196" />
   <link rel="icon" type="../image/png" href="img/favicon-160x160.png" sizes="160x160" />
@@ -42,11 +42,11 @@
       <!-- Header Navbar: style can be found in header.less -->
       <nav class="navbar navbar-static-top">
         <!-- Sidebar toggle button-->
-        <a href="http://localhost/atoline/" class="logo">
+        <a href="index.php" class="logo">
           <!-- mini logo for sidebar mini 50x50 pixels -->
           <span class="logo-mini"><b>A</b>LT</span>
           <!-- logo for regular state and mobile devices -->
-          <span class="logo-lg"><img src="../img/logo_w.png" width="100px;"></span>
+          <span class="logo-lg"><img src="../img/logo_pro.png" width="100px;"></span>
         </a>
         <div class="navbar-custom-menu">
           <ul class="nav navbar-nav">
@@ -173,7 +173,7 @@
                 <!-- Menu Footer-->
                 <li class="user-footer">
                   <div class="pull-left">
-                    <a href="http://localhost/atoline/profile.php" class="btn btn-default btn-flat">Profil</a>
+                    <a href="index.php" class="btn btn-default btn-flat">Profil</a>
                   </div>
                   <div class="pull-right">
                     <a href="" class="btn btn-default btn-flat">Se déconnecter</a>
@@ -255,7 +255,7 @@
                   <div class="user-block">
                     <img class="img-circle img-bordered-sm" src="../img/moi.jpg" alt="user image">
                     <span class="username">
-                      <a href="http://localhost:8888/Atoline/pro/prof1.php">Clotilde Dessange</a>
+                      <a href="prof1.php">Clotilde Dessange</a>
                     </span>
                     <span class="description">Urgence Glycémie faible - Ajourd'hui 4:30</span>
                   </div>
