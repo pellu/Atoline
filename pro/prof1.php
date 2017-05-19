@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <title>Atoline pro</title>
+  <title>Atoline | Pro</title>
   <link rel="shortcut icon" type="image/x-icon" href="../favicon.ico">
   <link rel="icon" type="image/png" href="../img/favicon-196x196.png" sizes="196x196" />
   <link rel="icon" type="image/png" href="../img/favicon-160x160.png" sizes="160x160" />
@@ -172,10 +172,10 @@
               <!-- Menu Footer-->
               <li class="user-footer">
                 <div class="pull-left">
-                  <a href="http://localhost/atoline/profile.php" class="btn btn-default btn-flat">Profil</a>
+                  <a href="index.php" class="btn btn-default btn-flat">Profil</a>
                 </div>
                 <div class="pull-right">
-                  <a href="" class="btn btn-default btn-flat">Se déconnecter</a>
+                  <a href="login.php" class="btn btn-default btn-flat">Se déconnecter</a>
                 </div>
               </li>
             </ul>
