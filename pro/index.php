@@ -225,7 +225,104 @@
                   </li>
                 </ul>
 
-                <a href="#" class="btn btn-primary btn-block"><b>Ouvrir le chat</b></a>
+                <a href="#myModal" class="btn btn-primary btn-block" role="button" data-toggle="modal"><b>Ouvrir le chat</b></a>
+                
+                <div id="myModal" class="modal fade">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                            </div>
+                            <div class="modal-body">
+                                <div class="box box-primary direct-chat direct-chat-primary">
+                                    <div class="box-header with-border">
+                                        <h3 class="box-title">Atoline Chat</h3>
+
+                                        <div class="box-tools pull-right">
+                                            <span data-toggle="tooltip" title="" class="badge bg-light-blue" data-original-title="3 New Messages">3</span>
+
+                                            <button type="button" class="btn btn-box-tool" data-toggle="tooltip" title="Contacts" data-widget="chat-pane-toggle">
+                                            <i class="fa fa-comments"></i></button>
+                                        </div>
+                                    </div>
+                                    <!-- /.box-header -->
+                                    <div class="box-body">
+                                       <!-- Message to the right -->
+                                            <div class="direct-chat-msg right">
+                                                <div class="direct-chat-info clearfix">
+                                                    <span class="direct-chat-name pull-right">Docteur Alexander Pierce</span>
+                                                    <span class="direct-chat-timestamp pull-left">17 Mai 14:00</span>
+                                                </div>
+                                                <!-- /.direct-chat-info -->
+                                                <img class="direct-chat-img" src="../dist/img/user1-128x128.jpg" alt="Message User Image">
+                                                <!-- /.direct-chat-img -->
+                                                <div class="direct-chat-text">
+                                                    Bonjour, comment vous sentez vous avec votr nouvelle pompe à insuline ?
+                                                </div>
+                                                <!-- /.direct-chat-text -->
+                                            </div>
+                                            <!-- /.direct-chat-msg -->
+                                        <!-- Conversations are loaded here -->
+                                        <div class="direct-chat-messages">
+                                            <!-- Message. Default to the left -->
+                                            <div class="direct-chat-msg">
+                                                <div class="direct-chat-info clearfix">
+                                                    <span class="direct-chat-name pull-left"> Clotilde Dessange</span>
+                                                    <span class="direct-chat-timestamp pull-right">17 Mai 15:00 </span>
+                                                </div>
+                                                <!-- /.direct-chat-info -->
+                                                <img class="direct-chat-img" src="../img/moi.jpg" alt="Message User Image">
+                                                <!-- /.direct-chat-img -->
+                                                <div class="direct-chat-text">
+                                                    Bonjour, merveilleusement bien, j'en est presque oublié son existence !
+                                                </div>
+                                                <!-- /.direct-chat-text -->
+                                            </div>
+                                            <!-- /.direct-chat-msg -->
+
+                                        </div>
+                                        <!--/.direct-chat-messages-->
+
+                                        <!-- Contacts are loaded here -->
+                                        <div class="direct-chat-contacts">
+                                            <ul class="contacts-list">
+                                                <li>
+                                                    <a href="#">
+                                                        <img class="contacts-list-img" src="../dist/img/user1-128x128.jpg" alt="User Image">
+
+                                                        <div class="contacts-list-info">
+                                                            <span class="contacts-list-name">
+                                                                Docteur Alexander Pierce
+                                                                <small class="contacts-list-date pull-right">17 Mai 15:00</small>
+                                                            </span>
+                                                            <span class="contacts-list-msg">Comment allez vous ?</span>
+                                                        </div>
+                                                        <!-- /.contacts-list-info -->
+                                                    </a>
+                                                </li>
+                                                <!-- End Contact Item -->
+                                            </ul>
+                                            <!-- /.contatcts-list -->
+                                        </div>
+                                        <!-- /.direct-chat-pane -->
+                                    </div>
+                                    <!-- /.box-body -->
+                                    <div class="box-footer">
+                                        <form action="#" method="post">
+                                            <div class="input-group">
+                                                <input type="text" name="message" placeholder="Écrivez votre message..." class="form-control">
+                                                <span class="input-group-btn">
+                                                    <button type="submit" class="btn btn-primary btn-flat">Envoyer</button>
+                                                </span>
+                                            </div>
+                                        </form>
+                                    </div>
+                                    <!-- /.box-footer-->
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>    
               </div>
               <!-- /.box-body -->
             </div>
