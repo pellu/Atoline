@@ -37,7 +37,7 @@
   <div class="login-box">
     <div class="login-logo">
       <a href="index.php">
-        <img src="img/logo.png" width="150px"></a>
+        <img src="img/logo_w.png" width="150px"></a>
       </div>
       <div class="login-box-body">
         <p class="login-box-msg">Connectez-vous pour utiliser Atoline</p>
