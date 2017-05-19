@@ -1,5 +1,5 @@
 
- <!DOCTYPE html>
+<!DOCTYPE html>
 <html>
 <head>
   <meta charset="utf-8">
@@ -36,227 +36,227 @@
 </head>
 
 <body class="hold-transition skin-blue sidebar-mini">
-<div class="wrapper">
-  <header class="main-header">
+  <div class="wrapper">
+    <header class="main-header">
 
-    <!-- Header Navbar: style can be found in header.less -->
-    <nav class="navbar navbar-static-top">
-      <!-- Sidebar toggle button-->
-<a href="http://localhost/atoline/" class="logo">
-      <!-- mini logo for sidebar mini 50x50 pixels -->
-      <span class="logo-mini"><b>A</b>LT</span>
-      <!-- logo for regular state and mobile devices -->
-      <span class="logo-lg"><img src="../img/logo_w.png" width="100px;"></span>
-    </a>
-      <div class="navbar-custom-menu">
-        <ul class="nav navbar-nav">
-          <!-- Messages: style can be found in dropdown.less-->
-          <li class="dropdown messages-menu">
-            <a href="#" class="dropdown-toggle" data-toggle="dropdown">
-              <i class="fa fa-envelope-o"></i>
-              <span class="label label-success">4</span>
-            </a>
-            <ul class="dropdown-menu">
-              <li class="header">Vous avez 4 nouveaux messages</li>
-              <li>
-                <!-- inner menu: contains the actual data -->
-                <ul class="menu">
-                  
-                  <!-- end message -->
-                  <li>
-                    <a href="#">
-                      <div class="pull-left">
-                        <img src="../dist/img/user3-128x128.jpg" class="img-circle" alt="User Image">
-                      </div>
-                      <h4>
-                        AdminLTE Design Team
-                        <small><i class="fa fa-clock-o"></i> 2 hours</small>
-                      </h4>
-                      <p>Why not buy a new awesome theme?</p>
-                    </a>
-                  </li>
-                  <li>
-                    <a href="#">
-                      <div class="pull-left">
-                        <img src="../dist/img/user4-128x128.jpg" class="img-circle" alt="User Image">
-                      </div>
-                      <h4>
-                        Developers
-                        <small><i class="fa fa-clock-o"></i> Today</small>
-                      </h4>
-                      <p>Why not buy a new awesome theme?</p>
-                    </a>
-                  </li>
-                  <li>
-                    <a href="#">
-                      <div class="pull-left">
-                        <img src="../dist/img/user3-128x128.jpg" class="img-circle" alt="User Image">
-                      </div>
-                      <h4>
-                        Sales Department
-                        <small><i class="fa fa-clock-o"></i> Yesterday</small>
-                      </h4>
-                      <p>Why not buy a new awesome theme?</p>
-                    </a>
-                  </li>
-                  <li>
-                    <a href="#">
-                      <div class="pull-left">
-                        <img src="../dist/img/user4-128x128.jpg" class="img-circle" alt="User Image">
-                      </div>
-                      <h4>
-                        Reviewers
-                        <small><i class="fa fa-clock-o"></i> 2 days</small>
-                      </h4>
-                      <p>Why not buy a new awesome theme?</p>
-                    </a>
-                  </li>
-                </ul>
-              </li>
-              <li class="footer"><a href="#">Voir tous les messages</a></li>
-            </ul>
-          </li>
-          <!-- Notifications: style can be found in dropdown.less -->
-          <li class="dropdown notifications-menu">
-            <a href="#" class="dropdown-toggle" data-toggle="dropdown">
-              <i class="fa fa-bell-o"></i>
-              <span class="label label-warning">4</span>
-            </a>
-            <ul class="dropdown-menu">
-              <li class="header">Vous avez 4 notifications</li>
-              <li>
-                <!-- inner menu: contains the actual data -->
-                <ul class="menu">
-                  <li>
-                    <a href="#">
-                      <i class="fa fa-warning text-yellow"></i> Niveau d'insuline bas
-                    </a>
-                  </li>
-                  <li>
-                    <a href="#">
-                      <i class="fa fa-warning text-red"></i> Niveau de batterie critique
-                    </a>
-                  </li>
-                  <li>
-                    <a href="#">
-                      <i class="fa fa-bullhorn text-red"></i> Vous avez rendez vous demain
-                    </a>
-                  </li>
-                  <li>
-                    <a href="#">
-                      <i class="fa fa-comment text-green"></i> Vous avez un nouveau message
-                    </a>
-                  </li>
-                  
-                </ul>
-              </li>
-              <li class="footer"><a href="#">Tout voir</a></li>
-            </ul>
-          </li>
-          
-          <!-- User Account: style can be found in dropdown.less -->
-          <li class="dropdown user user-menu">
-            <a href="#" class="dropdown-toggle" data-toggle="dropdown">
-              <img src="../dist/img/user1-128x128.jpg" class="user-image" alt="User Image">
-              <span class="hidden-xs">Docteur Alexander Pierce</span>
-            </a>
-            <ul class="dropdown-menu">
-              <!-- User image -->
-              <li class="user-header">
-                <img src="../dist/img/user1-128x128.jpg" class="img-circle" alt="User Image">
+      <!-- Header Navbar: style can be found in header.less -->
+      <nav class="navbar navbar-static-top">
+        <!-- Sidebar toggle button-->
+        <a href="http://localhost/atoline/" class="logo">
+          <!-- mini logo for sidebar mini 50x50 pixels -->
+          <span class="logo-mini"><b>A</b>LT</span>
+          <!-- logo for regular state and mobile devices -->
+          <span class="logo-lg"><img src="../img/logo_w.png" width="100px;"></span>
+        </a>
+        <div class="navbar-custom-menu">
+          <ul class="nav navbar-nav">
+            <!-- Messages: style can be found in dropdown.less-->
+            <li class="dropdown messages-menu">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                <i class="fa fa-envelope-o"></i>
+                <span class="label label-success">4</span>
+              </a>
+              <ul class="dropdown-menu">
+                <li class="header">Vous avez 4 nouveaux messages</li>
+                <li>
+                  <!-- inner menu: contains the actual data -->
+                  <ul class="menu">
 
-                <p>
-                  Docteur Alexander Pierce
-                  <small>Membre depuis Mai 2017</small>
-                </p>
-              </li>
-              <!-- Menu Footer-->
-              <li class="user-footer">
-                <div class="pull-left">
-                  <a href="http://localhost/atoline/profile.php" class="btn btn-default btn-flat">Profil</a>
-                </div>
-                <div class="pull-right">
-                  <a href="" class="btn btn-default btn-flat">Se déconnecter</a>
-                </div>
-              </li>
-            </ul>
-          </li>
-        </ul>
-      </div>
-    </nav>
-  </header>
-
-  
-
-  <!-- Content Wrapper. Contains page content -->
-  <div class="content-wrapper">
-    <!-- Content Header (Page header) -->
-    <section class="content-header">
-      <h1>
-        Gestion des Patients
-      </h1>
-     
-    </section>
-
-    <!-- Main content -->
-    <section class="content">
-
-      <div class="row">
-        <div class="col-md-3">
-
-          <!-- Profile Image -->
-          <div class="box box-primary">
-            <div class="box-body box-profile">
-              <img class="profile-user-img img-responsive img-circle" src="../dist/img/user1-128x128.jpg" alt="User profile picture">
-
-              <h3 class="profile-username text-center">Alexander Pierce</h3>
-
-              <p class="text-muted text-center">Docteur</p>
-
-              <ul class="list-group list-group-unbordered">
-                <li class="list-group-item">
-                  <b>Nombre de patients à voir</b> <a class="pull-right">230</a>
+                    <!-- end message -->
+                    <li>
+                      <a href="#">
+                        <div class="pull-left">
+                          <img src="../dist/img/user3-128x128.jpg" class="img-circle" alt="User Image">
+                        </div>
+                        <h4>
+                          AdminLTE Design Team
+                          <small><i class="fa fa-clock-o"></i> 2 hours</small>
+                        </h4>
+                        <p>Why not buy a new awesome theme?</p>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#">
+                        <div class="pull-left">
+                          <img src="../dist/img/user4-128x128.jpg" class="img-circle" alt="User Image">
+                        </div>
+                        <h4>
+                          Developers
+                          <small><i class="fa fa-clock-o"></i> Today</small>
+                        </h4>
+                        <p>Why not buy a new awesome theme?</p>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#">
+                        <div class="pull-left">
+                          <img src="../dist/img/user3-128x128.jpg" class="img-circle" alt="User Image">
+                        </div>
+                        <h4>
+                          Sales Department
+                          <small><i class="fa fa-clock-o"></i> Yesterday</small>
+                        </h4>
+                        <p>Why not buy a new awesome theme?</p>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#">
+                        <div class="pull-left">
+                          <img src="../dist/img/user4-128x128.jpg" class="img-circle" alt="User Image">
+                        </div>
+                        <h4>
+                          Reviewers
+                          <small><i class="fa fa-clock-o"></i> 2 days</small>
+                        </h4>
+                        <p>Why not buy a new awesome theme?</p>
+                      </a>
+                    </li>
+                  </ul>
                 </li>
-                <li class="list-group-item">
-                  <b>Notifications en attente</b> <a class="pull-right">43</a>
+                <li class="footer"><a href="#">Voir tous les messages</a></li>
+              </ul>
+            </li>
+            <!-- Notifications: style can be found in dropdown.less -->
+            <li class="dropdown notifications-menu">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                <i class="fa fa-bell-o"></i>
+                <span class="label label-warning">4</span>
+              </a>
+              <ul class="dropdown-menu">
+                <li class="header">Vous avez 4 notifications</li>
+                <li>
+                  <!-- inner menu: contains the actual data -->
+                  <ul class="menu">
+                    <li>
+                      <a href="#">
+                        <i class="fa fa-warning text-yellow"></i> Niveau d'insuline bas
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#">
+                        <i class="fa fa-warning text-red"></i> Niveau de batterie critique
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#">
+                        <i class="fa fa-bullhorn text-red"></i> Vous avez rendez vous demain
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#">
+                        <i class="fa fa-comment text-green"></i> Vous avez un nouveau message
+                      </a>
+                    </li>
+
+                  </ul>
                 </li>
-                <li class="list-group-item">
-                  <b>Nombre de patients total</b> <a class="pull-right">423</a>
+                <li class="footer"><a href="#">Tout voir</a></li>
+              </ul>
+            </li>
+
+            <!-- User Account: style can be found in dropdown.less -->
+            <li class="dropdown user user-menu">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                <img src="../dist/img/user1-128x128.jpg" class="user-image" alt="User Image">
+                <span class="hidden-xs">Docteur Alexander Pierce</span>
+              </a>
+              <ul class="dropdown-menu">
+                <!-- User image -->
+                <li class="user-header">
+                  <img src="../dist/img/user1-128x128.jpg" class="img-circle" alt="User Image">
+
+                  <p>
+                    Docteur Alexander Pierce
+                    <small>Membre depuis Mai 2017</small>
+                  </p>
+                </li>
+                <!-- Menu Footer-->
+                <li class="user-footer">
+                  <div class="pull-left">
+                    <a href="http://localhost/atoline/profile.php" class="btn btn-default btn-flat">Profil</a>
+                  </div>
+                  <div class="pull-right">
+                    <a href="" class="btn btn-default btn-flat">Se déconnecter</a>
+                  </div>
                 </li>
               </ul>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
 
-              <a href="#" class="btn btn-primary btn-block"><b>Ouvrir le chat</b></a>
+
+
+    <!-- Content Wrapper. Contains page content -->
+    <div class="content-wrapper">
+      <!-- Content Header (Page header) -->
+      <section class="content-header">
+        <h1>
+          Gestion des Patients
+        </h1>
+
+      </section>
+
+      <!-- Main content -->
+      <section class="content">
+
+        <div class="row">
+          <div class="col-md-3">
+
+            <!-- Profile Image -->
+            <div class="box box-primary">
+              <div class="box-body box-profile">
+                <img class="profile-user-img img-responsive img-circle" src="../dist/img/user1-128x128.jpg" alt="User profile picture">
+
+                <h3 class="profile-username text-center">Alexander Pierce</h3>
+
+                <p class="text-muted text-center">Docteur</p>
+
+                <ul class="list-group list-group-unbordered">
+                  <li class="list-group-item">
+                    <b>Nombre de patients à voir</b> <a class="pull-right">230</a>
+                  </li>
+                  <li class="list-group-item">
+                    <b>Notifications en attente</b> <a class="pull-right">43</a>
+                  </li>
+                  <li class="list-group-item">
+                    <b>Nombre de patients total</b> <a class="pull-right">423</a>
+                  </li>
+                </ul>
+
+                <a href="#" class="btn btn-primary btn-block"><b>Ouvrir le chat</b></a>
+              </div>
+              <!-- /.box-body -->
             </div>
-            <!-- /.box-body -->
+            <!-- /.box -->
           </div>
-          <!-- /.box -->
-                  </div>
-        <!-- /.col -->
-        <div class="col-md-9">
-          <div class="nav-tabs-custom">
-            <ul class="nav nav-tabs">
-              <li class="active"><a href="#activity" data-toggle="tab" style="color:red">Urgence</a></li>
-              <li><a href="#timeline" data-toggle="tab">À traiter</a></li>
-              <li><a href="#settings" data-toggle="tab">Tout</a></li>
-            </ul>
-            <div class="tab-content">
-             <div class="input-group">
-          <input type="text" name="q" class="form-control" placeholder="Rechercher un patient...">
-              <span class="input-group-btn">
-                <button type="submit" name="search" id="search-btn" class="btn btn-flat"><i class="fa fa-search"></i>
-                </button>
-              </span>       
-            </div>
-             <br>
-             
+          <!-- /.col -->
+          <div class="col-md-9">
+            <div class="nav-tabs-custom">
+              <ul class="nav nav-tabs">
+                <li class="active"><a href="#activity" data-toggle="tab" style="color:red">Urgence</a></li>
+                <li><a href="#timeline" data-toggle="tab">À traiter</a></li>
+                <li><a href="#settings" data-toggle="tab">Tout</a></li>
+              </ul>
+              <div class="tab-content">
+               <div class="input-group">
+                <input type="text" name="q" class="form-control" placeholder="Rechercher un patient...">
+                <span class="input-group-btn">
+                  <button type="submit" name="search" id="search-btn" class="btn btn-flat"><i class="fa fa-search"></i>
+                  </button>
+                </span>       
+              </div>
+              <br>
+
               <div class="active tab-pane" id="activity">
                 <!-- Post -->
                 <div class="post">
                   <div class="user-block">
                     <img class="img-circle img-bordered-sm" src="../img/moi.jpg" alt="user image">
-                        <span class="username">
-                          <a href="http://localhost:8888/Atoline/pro/prof1.php">Clotilde Dessange</a>
-                        </span>
+                    <span class="username">
+                      <a href="http://localhost:8888/Atoline/pro/prof1.php">Clotilde Dessange</a>
+                    </span>
                     <span class="description">Urgence Glycémie faible - Ajourd'hui 4:30</span>
                   </div>
                 </div>
@@ -264,9 +264,9 @@
                 <div class="post">
                   <div class="user-block">
                     <img class="img-circle img-bordered-sm" src="../dist/img/user3-128x128.jpg" alt="user image">
-                        <span class="username">
-                          <a href="#">Léa Bart</a>
-                        </span>
+                    <span class="username">
+                      <a href="#">Léa Bart</a>
+                    </span>
                     <span class="description">Urgence perte de connexion - Ajourd'hui 11:30</span>
                   </div>
                 </div>
@@ -274,7 +274,7 @@
                 
 
 
-              
+
 
               </div>
               <!-- /.tab-pane -->
@@ -545,10 +545,10 @@
   </aside>
   <!-- /.control-sidebar -->
   <!-- Add the sidebar's background. This div must be placed
-       immediately after the control sidebar -->
+  immediately after the control sidebar -->
   <div class="control-sidebar-bg"></div>
 </div>
-
+<script src="../plugins/jQuery/jquery-2.2.3.min.js"></script>
 <script src="../bootstrap/js/bootstrap.min.js"></script>
 <script src="../plugins/fastclick/fastclick.js"></script>
 <script src="../dist/js/app.min.js"></script>
