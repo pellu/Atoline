@@ -5,12 +5,12 @@
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <title>Atoline pro</title>
-  <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
-  <link rel="icon" type="../image/png" href="img/favicon-196x196.png" sizes="196x196" />
-  <link rel="icon" type="../image/png" href="img/favicon-160x160.png" sizes="160x160" />
-  <link rel="icon" type="../image/png" href="img/favicon-96x96.png" sizes="96x96" />
-  <link rel="icon" type="../image/png" href="img/favicon-32x32.png" sizes="32x32" />
-  <link rel="icon" type="../image/png" href="img/favicon-16x16.png" sizes="16x16" />
+  <link rel="shortcut icon" type="image/x-icon" href="../favicon.ico">
+  <link rel="icon" type="image/png" href="../img/favicon-196x196.png" sizes="196x196" />
+  <link rel="icon" type="image/png" href="../img/favicon-160x160.png" sizes="160x160" />
+  <link rel="icon" type="image/png" href="../img/favicon-96x96.png" sizes="96x96" />
+  <link rel="icon" type="image/png" href="../img/favicon-32x32.png" sizes="32x32" />
+  <link rel="icon" type="image/png" href="../img/favicon-16x16.png" sizes="16x16" />
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="black">
   <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=0">
