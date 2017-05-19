@@ -52,7 +52,7 @@
         <div class="col-xs-8">
           <div class="checkbox icheck">
             <label>
-              <input type="checkbox"> J'accepte les <a href="#">termes</a> 
+              <input type="checkbox"> J'accepte les <a href="#">CGU</a> 
             </label>
           </div>
         </div>
